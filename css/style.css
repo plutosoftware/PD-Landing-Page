@@ -1,6 +1,7 @@
 /* Global Styles */
 * {
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -19,9 +20,9 @@
     color: #00a077;
     padding: 10px 0px;
 }
+
 #header {
-    width: 100vw;
-    margin-top: -200px;
+    margin-top: -210px;
     min-height: 120vh;
     background-image: url("../src/HERO.png");
     background-repeat: no-repeat;
@@ -31,29 +32,38 @@
 }
 
 #features {
-    width: auto;
     min-height: 100vh;
     background-image: url("../src/section2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: #d8f0fa;
-    padding: 0px 50px;
-}
-
-#process {
-    width: auto;
-    min-height: 100vh;
-    background-image: url("../src/process.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #d8f0fa;
     padding: 0px 50px;
+}
+
+#contact {
+    min-height: auto;
+    background-image: url("../src/contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #d8f0fa;
+    padding: 0px 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 100px 0px;
+}
+
+#process {
+    background-image: url("../src/process.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #d8f0fa;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding: 50px 50px;
     color: white;
     font-size: 18px;
     font-family: "DM Sans", sans-serif;
@@ -70,10 +80,19 @@
     font-size: 18px;
     font-family: "DM Sans", sans-serif;
 }
+#brands h1{
+    margin-bottom: 40px;
+}
+#brands div img {
+    margin: 10px 20px;
+}
+
+#brands p{
+    margin-top: 30px;
+}
 
 #extra_margin {
     height: 100px;
-    width: 100vw;
     background-color: #d8f0fa;
 }
 
@@ -82,7 +101,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 60px;
+    padding: 10px 60px;
 }
 
 #logo {
@@ -133,4 +152,127 @@ nav {
     padding: 20px;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+/* Contact Us Styles */
+#contact {
+    width: auto;
+    min-height: auto;
+    background-image: url("../src/contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #d8f0fa;
+    padding: 0px 50px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 100px 50px;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+#contact div p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contact div h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+#contact form label {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contact form input {
+    width: 90%;
+    margin: 5px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+}
+
+#contact form input::placeholder {
+    color: white;
+}
+
+/* Footer Styles */
+
+footer {
+    min-height: auto;
+    color: white;
+    background-color: black;
+    padding: 50px 50px;
+    font-family: "DM Sans", sans-serif;
+}
+
+#footer_div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#footer_div1 div:nth-child(2) {
+    display: flex;
+}
+
+#footer_div1 div:nth-child(2) p {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+#footer_div1 div:nth-child(3) {
+    display: flex;
+}
+
+footer hr {
+    color: white;
+    opacity: 0.6;
+}
+
+#footer_div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.6;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#footer_div2 div {
+    display: flex;
+}
+
+#footer_div2 div p {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.process_div {
+    margin: 20px 0px;
+    border-radius: 20px;
+    background-color: #d8f0fa;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-block-end: 20px;
+}
+
+.process_meta {
+    padding: 30px;
+    flex: 2;
 }
